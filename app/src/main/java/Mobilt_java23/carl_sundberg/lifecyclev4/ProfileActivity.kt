@@ -64,6 +64,9 @@ class ProfileActivity : AppCompatActivity() {
             editor.apply()
 
             Toast.makeText(this, "Profile saved!", Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
         }
 
         // Ladda sparad data om det finns
@@ -100,22 +103,22 @@ class ProfileActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.action_home -> {
-           //     val intent = Intent(this, HomeActivity::class.java)
+            R.id.action_profile -> {
+                val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)
                 true
             }
 
-            R.id.action_profile -> {
+            R.id.profile -> {
                 // Om användaren redan är på profilsidan, kan du välja att inte göra något
                 true
             }
 
-            R.id.action_settings -> {
+      /*     R.id.action_settings -> {
             //    val intent = Intent(this, SettingsActivity::class.java)
                 startActivity(intent)
                 true
-            }
+            }*/
 
             else -> super.onOptionsItemSelected(item)
         }
