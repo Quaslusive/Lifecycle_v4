@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "593202701445",
+    "project_id": "lifecyclev4-6d1ab",
+    "storage_bucket": "lifecyclev4-6d1ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593202701445:android:7b7a42e95580a0db3035ec",
+        "android_client_info": {
+          "package_name": "Mobilt_java23.carl_sundberg.lifecyclev4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGEMQRSPLXK33NeCg_VK2bkr0FkLPGxbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

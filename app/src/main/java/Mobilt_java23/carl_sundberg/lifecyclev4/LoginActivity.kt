@@ -15,19 +15,19 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_login)
-
-        val loginButton = findViewById<Button>(R.id.btnLogin)
-        loginButton.setOnClickListener {
-            val username = findViewById<EditText>(R.id.etUsername).text.toString()
-            val password = findViewById<EditText>(R.id.etPassword).text.toString()
-
-            if (username == "user" && password == "password") {
-                val intent = Intent(this, ProfileActivity::class.java)
-                startActivity(intent)
-            } else {
-                Toast.makeText(this, "Invalid credentials", Toast.LENGTH_SHORT).show()
-            }
-        }
+//
+//        val loginButton = findViewById<Button>(R.id.btnLogin)
+//        loginButton.setOnClickListener {
+//            val username = findViewById<EditText>(R.id.etUsername).text.toString()
+//            val password = findViewById<EditText>(R.id.etPassword).text.toString()
+//
+//            if (username == "user" && password == "password") {
+//                val intent = Intent(this, ProfileActivity::class.java)
+//                startActivity(intent)
+//            } else {
+//                Toast.makeText(this, "Invalid credentials", Toast.LENGTH_SHORT).show()
+//            }
+//        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
