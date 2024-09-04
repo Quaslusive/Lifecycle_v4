@@ -23,25 +23,29 @@
         android:id="@+id/etUsername"
         android:layout_width="362dp"
         android:layout_height="57dp"
-        android:layout_marginTop="576dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="48dp"
         android:backgroundTint="#4D86B2"
         android:ems="10"
         android:fallbackLineSpacing="false"
+        android:hint="Användarnamn"
         android:inputType="text"
-        android:text="Användarnamn"
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="368dp"
         android:layout_height="71dp"
+        android:layout_marginBottom="161dp"
         android:ems="10"
+        android:hint="Lösenord"
         android:inputType="text"
-        android:text="Lössenord"
+        android:textColorHint="#2196F3"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="666dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

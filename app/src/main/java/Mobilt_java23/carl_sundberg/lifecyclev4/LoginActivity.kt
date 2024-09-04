@@ -21,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
             val username = findViewById<EditText>(R.id.etUsername).text.toString()
             val password = findViewById<EditText>(R.id.etPassword).text.toString()
 
-            if (username == "user" && password == "password") {
+            if (username == "" && password == "") {
                 val intent = Intent(this, ProfileActivity::class.java)
                 startActivity(intent)
             } else {
@@ -36,5 +36,6 @@ class LoginActivity : AppCompatActivity() {
 
 
         }
+
     }
 }
