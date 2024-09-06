@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/activity_profile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfileActivity"
@@ -12,9 +12,16 @@
         android:id="@+id/etName"
         android:layout_width="285dp"
         android:layout_height="53dp"
+        android:autofillHints="Ron Perlman"
+        android:backgroundTint="@color/white"
         android:ems="10"
-        android:hint="Förnamn"
+        android:hint="Namn"
         android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/etAge"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -25,56 +32,84 @@
         android:id="@+id/etAge"
         android:layout_width="286dp"
         android:layout_height="67dp"
+        android:autofillHints="69"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="Ålder"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/swicthCeleryMan"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/switchCeleryMan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etName" />
 
     <Switch
-        android:id="@+id/swicthCeleryMan"
+        android:id="@+id/switchCeleryMan"
         android:layout_width="344dp"
         android:layout_height="57dp"
+        android:backgroundTint="#9C27B0"
         android:text="Har sett &quot;Tim and Eric - Celery Man&quot;"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/rgGender"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etAge" />
+        app:layout_constraintTop_toBottomOf="@+id/etAge"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
     <RadioGroup
         android:id="@+id/rgGender"
+        style="bold"
         android:layout_width="match_parent"
         android:layout_height="135dp"
+        android:backgroundTint="#E91E63"
         android:orientation="horizontal"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/etEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/swicthCeleryMan">
+        app:layout_constraintTop_toBottomOf="@+id/switchCeleryMan">
 
         <RadioButton
             android:id="@+id/rbMale"
             android:layout_width="114dp"
             android:layout_height="match_parent"
-            android:text="RadioButton"
+            android:backgroundTint="#9C27B0"
+            android:text="Man"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             tools:text="Man" />
 
         <RadioButton
             android:id="@+id/rbFemale"
             android:layout_width="134dp"
             android:layout_height="match_parent"
-            android:text="RadioButton"
+            android:backgroundTint="#9C27B0"
+            android:text="Kvinna"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             tools:text="Kvinna" />
 
         <RadioButton
             android:id="@+id/rbOther"
             android:layout_width="160dp"
             android:layout_height="match_parent"
-            android:text="RadioButton"
+            android:backgroundTint="#9C27B0"
+            android:text="Något helt annat"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             tools:text="Något helt annat" />
     </RadioGroup>
 
@@ -82,35 +117,40 @@
         android:id="@+id/etEmail"
         android:layout_width="324dp"
         android:layout_height="70dp"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="Email"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/spinnerSubscription"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rgGender" />
-
-    <Spinner
-        android:id="@+id/spinnerSubscription"
-        android:layout_width="407dp"
-        android:layout_height="55dp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="213dp"
         android:layout_height="73dp"
         android:text="Spara 💾"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerSubscription" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

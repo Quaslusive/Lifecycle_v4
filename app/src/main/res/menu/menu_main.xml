@@ -3,18 +3,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_profile"
-        android:title="HomeActivity"
+        android:id="@+id/action_home"
+        android:title="Huvud sida"
         android:icon="@drawable/hamburgercircle256x256"
         app:showAsAction="never" />
     <item
-        android:id="@+id/profile"
-        android:title="ProfileActivity"
+        android:id="@+id/activity_profile"
+        android:title="Formulär sida"
+        android:icon="@drawable/hamburgercircle256x256"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_login"
+        android:title="Logg-in sida"
         android:icon="@drawable/hamburgercircle256x256"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_logout"
-        android:title="Logout"
+        android:title="Logga ut"
         android:icon="@drawable/hamburgercircle256x256"
         app:showAsAction="never" />
 </menu>
