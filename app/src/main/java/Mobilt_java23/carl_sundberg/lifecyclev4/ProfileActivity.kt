@@ -70,7 +70,7 @@ class ProfileActivity : AppCompatActivity() {
 
     private fun validateAge(age: String): Boolean {
         val agePattern = "^[0-9]{1,3}$"  // Endast siffror, mellan 1 och 3 tecken
-        return Pattern.matches(agePattern, age) && age.toInt() in 1..120
+        return Pattern.matches(agePattern, age) && age.toInt() in 1..420
     }
 
     private fun validateEmail(email: String): Boolean {
